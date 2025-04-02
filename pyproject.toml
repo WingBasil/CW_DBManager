@@ -1,4 +1,5 @@
 [tool.poetry]
+
 name = "cw_dbmanager"
 version = "0.1.0"
 description = ""
