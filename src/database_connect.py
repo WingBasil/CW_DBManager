@@ -12,7 +12,7 @@ def db_create() -> None:
     conn.autocommit = True
     cur = conn.cursor()  # Курсор для работы с DB
 
-    cur.execute(f"DROP DATABASE company")  # Удаление базы данных (обновляем)
+    cur.execute(f"DROP DATABASE IF EXISTS company")  # Удаление базы данных (обновляем)
     cur.execute(f"CREATE DATABASE company")  # Создание базы данных
 
     cur.close()  # Закрытие курсора
